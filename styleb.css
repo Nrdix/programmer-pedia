@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9fd;
+    padding: 20px;
+    margin: 0;
+}
+
+.pricing {
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.pricing p {
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 600px; /* Membuat ukuran kotak lebih panjang */
+    position: relative;
+    text-align: left;
+}
+
+.popular {
+    border: 3px solid #f6b02e; /* Bingkai di semua sisi */
+    border-top-width: 60px; /* Membuat bagian atas lebih tebal */
+    min-height: 500px;
+    position: relative;
+}
+
+.popular::before {
+    content: 'TERPOPULER!';
+    position: absolute;
+    top: -40px; /* Sesuaikan agar teks berada di atas kartu */
+    left: 50%; /* Tempatkan di tengah */
+    transform: translateX(-50%); /* Agar teks benar-benar di tengah */
+    padding: 2px 10px; /* Memberi sedikit ruang di sekitar teks */
+    font-weight: bold;
+    font-size: 18px;
+    color: #333; /* Warna teks */
+    border-radius: 5px; /* Membuat sudut teks melengkung */
+}
+
+
+.orange-section {
+    background-color: #f6b02e; /* Background warna oranye */
+    color: white;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.orange-section h3:first-child {
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: #ffd700; /* Warna terpopuler kuning emas */
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.blue-section {
+    background-color: #007bff; /* Background warna biru */
+    color: white;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.blue-section h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.orange-section h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.orange-section p,
+.blue-section p {
+    margin: 5px 0;
+}
+
+.orange-section del,
+.blue-section del {
+    color: #ffdfdf;
+}
+
+.orange-section h4,
+.blue-section h4 {
+    margin: 10px 0;
+    font-size: 26px;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+button {
+    background-color: #00a1f1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007ec1;
+}
+
+.soon {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
